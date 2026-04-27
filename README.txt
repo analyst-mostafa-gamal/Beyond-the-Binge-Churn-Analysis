@@ -18,15 +18,6 @@ DAX Measures: Developed custom measures for Churn Rate %, Average Revenue Per Us
 
 Dynamic Visuals: Built an interactive dashboard with "What-If" parameters to simulate how a 5% reduction in churn would impact the bottom line.
 
-📈 Key Insights & KPIs
-Total Churn Rate: [Insert % e.g., 26.5%]
-
-Contract Risk: Customers on Month-to-Month contracts are [X]x more likely to churn than those on Annual plans.
-
-Payment Method Impact: High correlation between churn and "Electronic Check" payments, suggesting potential friction in the payment experience.
-
-Tenure Sweet Spot: The highest churn occurs within the first 6 months of subscription; customers who survive past 12 months show a 70% increase in loyalty.
-
 📊 Data Logic & Technical Notes
 Data Preparation: Python was chosen for the ETL phase to ensure a repeatable and scalable cleaning process that handles large datasets more efficiently than Excel.
 
@@ -34,9 +25,42 @@ DAX Architecture: Instead of using calculated columns, I utilized DAX Measures t
 
 Grouping Logic: Tenure was grouped into categories (e.g., 0-6 months, 6-12 months) in Python to allow for clearer trend visualization in Power BI.
 
+Business Case & Executive Summary
+📈 Key Performance Indicators (KPIs)
+These represent the "Health Check" of the platform:
+
+Total Subscribers: 8,579
+
+Monthly Revenue: €395.39K
+
+Retention Rate: 85.17% (Demonstrating high core loyalty)
+
+Churn Rate: 14.83% (The primary target for business optimization)
+
+Average Revenue Per User (ARPU): €46.09
+
+Ad Spend Efficiency (ROAS): €220.69
+
+🔍 Key Business Insights
+The "Prime Time" Window: 45% of platform traffic peaks during Evening hours (reaching ~4.7K concurrent users). This is the critical window for content drops and push notifications.
+
+Acquisition Quality vs. Volume: While PPC (Pay-Per-Click) brings in the highest volume of users (1,816), Referral and SEO channels provide better long-term conversion stability and higher quality users.
+
+The "Cash Cow" Plan: The Standard Plan is the backbone of the platform’s economy, contributing 34.56% of total revenue.
+
+Device Preference: Smart TVs are the dominant device for long-form viewing, suggesting that UI/UX improvements should be prioritized for television apps.
+
+Retention Profitability: Insights prove that Retention-based campaigns yield the highest ROI (€222.31), confirming that it is significantly more cost-effective to keep an existing user than to acquire a new one.
+
 💡 Strategic Recommendations
-Incentivize Annual Plans: Offer a 10% discount to Month-to-Month users to switch to 1-year contracts, targeting the segment with the highest churn risk.
+To move the platform from "Volume Acquisition" to "Value Retention," I propose the following actions:
 
-Onboarding Focus: Implement a "First 90 Days" engagement campaign (exclusive content, personalized emails) to push customers past the 6-month churn danger zone.
+Optimize for High-Value Devices: Enhance the UI/UX specifically for Smart TVs, as this is where the most profitable and engaged users spend their time.
 
-Payment Migration: Transition "Electronic Check" users toward Auto-pay or Credit Card options to reduce involuntary churn caused by expired or failed manual payments.
+Tier Upselling Strategy: Use personalized content recommendations to target "Basic Plan" users and incentivize upgrades to the Standard Plan (the platform's highest revenue driver).
+
+Realignment of Marketing Spend: Reallocate 10% of the current marketing budget from "Awareness" (top-of-funnel) to "Retention" (bottom-of-funnel) to maximize the Return on Ad Spend (ROAS).
+
+Engagement-Based Retention: Implement automated push notifications for "Low Engagement" users during the afternoon to "prime" them for the Evening peak usage window.
+
+Feature Adoption: Increase awareness of the "Download" feature for mobile users within their first 30 days, as data suggests a high correlation between feature usage and long-term retention.
